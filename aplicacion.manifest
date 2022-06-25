@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+resultado.html
+js/libs/modernizr/modernizr.min.js
+js/libs/jquery/jquery.slim.min.js
+
+images/logotipo_offline.png
+
+FALLBACK:
+images/logotipo.png images/logotipo_offline.png
+

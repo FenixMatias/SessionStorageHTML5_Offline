@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mostrar Resultados</title>
+        <meta charset="UTF-8">
+        <script src="js/libs/modernizr/modernizr.min.js"></script>
+        <script src="js/libs/jquery/jquery.slim.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+                if(sessionStorage.getItem('listado')){
+                    $('#mensaje').html('<h3>Datos almacenados en Session Storage:</h3>');
+                    $('#resultado').text(sessionStorage.getItem('listado'));
+                } else {
+                    $('#mensaje').text('No hay datos en Session Storage');
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Resultados</h1>
+        <div id="mensaje"></div>
+        <div id="resultado"></div>
+        <a href="index.html">Regresar al inicio</a>
+    </body>
+</html>
